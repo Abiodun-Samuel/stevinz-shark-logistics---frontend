@@ -131,13 +131,13 @@
         <p class="small my-0 py-0">Location: {{ inventories?.trackedInventory?.location }}</p>
         <hr />
         <p class="small my-0 py-0 text-info">Events</p>
-        <ul>
+        <ul class="">
           <li
-            class="small my-0 py-0"
-            v-for="(inventory, index) in inventories?.timelines"
+            class="small my-0 py-0 ms-3"
+            v-for="(inventory, index) in inventories?.trackedInventory?.timelines"
             :key="index"
           >
-            {{ inventory?.events }}
+            {{ index + 1 }}. {{ inventory?.events }}
           </li>
         </ul>
       </div>
@@ -159,7 +159,7 @@ import { useInventoryStore } from '@/stores/inventory'
 import { ref } from 'vue'
 
 const inventories = useInventoryStore()
-const openShipmentDetailsModal = ref(true)
+const openShipmentDetailsModal = ref(false)
 
 const shipment_number = ref('')
 
