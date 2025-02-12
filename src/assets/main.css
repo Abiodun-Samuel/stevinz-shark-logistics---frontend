@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Regular.ttf') format('woff2');
+}
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Main wrapper */
+.body-wrapper {
+  min-height: 101vh;
+}
+
+.gold {
+  color: var(--pan-primary);
+}
+
+/* button gradient for login  */
+.btn-login {
+  background: linear-gradient(310deg, #422ec8 0%, #9f91f5 100%);
+  color: #fff;
+}
+
+.btn-login:disabled {
+  background: linear-gradient(310deg, #6656d2 0%, #b4a8ff 100%);
+  color: #fff;
+}
+
+.btn-login:hover {
+  color: #fff;
+}
+
+/* Font sizes */
+.text-lg {
+  font-size: 2.125rem !important;
+}
+.text-md {
+  font-size: 1.125rem !important;
+}
+.text-sm {
+  font-size: 0.85rem !important;
+}
+.text-xs {
+  font-size: 0.75rem !important;
+}
+.text-xxs {
+  font-size: 0.65rem !important;
+}
+
+/* table style */
+table tbody tr:last-child {
+  border-bottom: transparent;
+}
+
+/* table status dots  */
+
+.badge-circle {
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0 !important;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid #eee;
+}
+
+.red {
+  background: linear-gradient(310deg, #f5365c 0%, #f56036 100%);
+}
+
+.green {
+  background: linear-gradient(310deg, #2dce89 0%, #2dcecc 100%);
+}
+
+.grey {
+  background-image: linear-gradient(310deg, #ced4da 0%, #ebeff4 100%);
+}
+
+.amber {
+  background-image: linear-gradient(310deg, #fb6340 0%, #fbb140 100%);
+}
+
+/* side bar nav */
+
+.left-sidebar {
+  width: 300px;
+}
+
+.ti {
+  color: var(--pan-primary);
+}
+
+.brand-logo {
+  min-height: 130px;
+  padding: 0 2rem;
+}
+
+hr.horizontal.dark {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+hr.horizontal {
+  background-color: transparent;
+}
+
+hr:not([size]) {
+  height: 1px;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+}
+
+/* user avatar */
+
+.avatar {
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  height: 48px;
+  width: 48px;
+  transition: all 0.2s ease-in-out;
+}
+
+.avatar-xs {
+  width: 24px !important;
+  height: 24px !important;
+  font-size: 0.8rem;
+}
+
+/* form field floating name placeholder thing */
+.form-select ~ label::after {
+  background-color: transparent !important;
+}
+
+.form-floating > label {
+  opacity: 0.65 !important;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem) !important;
+}
