@@ -94,21 +94,3 @@ onMounted(() => {
   dashboard()
 })
 </script>
-
-<style scoped>
-#brandSelector {
-  width: 220px;
-  position: absolute;
-  top: 50px;
-  left: 30px;
-}
-
-#brandSelector label {
-  display: none !important;
-}
-
-#brandSelector select {
-  color: transparent;
-  border: 0;
-}
-</style>
